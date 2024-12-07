@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z2Learn EdTech - Revolutionizing Education</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            color: white;
+        }
+
+        .feature-card {
+            transition: transform 0.3s ease;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .tools-section {
+            background-color: #f8fafc;
+        }
+
+        .courses-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Z2Learn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">Revolutionizing Education with AI</h1>
+            <p class="lead mb-4">Empowering students, educators, and researchers with cutting-edge educational tools and courses</p>
+            <button class="btn btn-primary btn-lg me-3">Get Started</button>
+            <button class="btn btn-outline-light btn-lg">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="section tools-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Educational Tools</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-circle">
+                                <i class="fas fa-road fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">Roadmap Generator</h5>
+                            <p class="card-text">Create personalized learning paths based on your goals and current knowledge level.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-circle">
+                                <i class="fas fa-code fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">Learning Coding Tools</h5>
+                            <p class="card-text">Interactive tutorials and personalized feedback for effective coding education.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-circle">
+                                <i class="fas fa-robot fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">ZGPT Assistant</h5>
+                            <p class="card-text">AI-powered academic assistance for comprehensive learning support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section courses-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Courses</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">3D & XR Development</h5>
+                            <p class="card-text">AR, VR, XR, MR & Game Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">AI Development</h5>
+                            <p class="card-text">Machine Learning & AI Applications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Full-stack & SaaS Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">No-Code/Low-Code</h5>
+                            <p class="card-text">Rapid Application Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Join Our Community</h2>
+                    <p class="mb-4">Connect with like-minded individuals in our freelance community and grow together.</p>
+                    <h3 class="mb-3">ZFounders Program</h3>
+                    <p>Get holistic support to transform your startup idea into a growing business.</p>
+                    <button class="btn btn-primary">Join Now</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="/api/placeholder/600/400" alt="Community" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Z2Learn EdTech</h5>
+                    <p>Making a difference in learning through AI-powered educational tools.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#tools" class="text-light">Tools</a></li>
+                        <li><a href="#courses" class="text-light">Courses</a></li>
+                        <li><a href="#community" class="text-light">Community</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@z2learn.com</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Z2Learn EdTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
